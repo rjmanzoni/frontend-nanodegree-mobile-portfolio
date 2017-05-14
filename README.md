@@ -21,10 +21,13 @@
 
 #### Otimizações realizadas no projeto para atingir niveis aceitaveis de performance:
 
-1. index.html
+**1. index.html**:
  * Mover o style.css para o index.html
  * Carregar o print.css somente quando para impressão adicionando *media="print"*
  * *async* adicionado para carregar assincronamente os js perfmatters.js e analytics.js
  * arquivo perfmatters.js minificado
+
+**2. pizza.html**:
+ * Mover o style.css para o pizza.html
 
 
