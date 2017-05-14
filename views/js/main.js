@@ -436,6 +436,8 @@ var resizePizzas = function(size) {
     }
 
   // Iterates through pizza elements on the page and changes their widths
+  //Ajustes para evitar chamada descenessaria em cada loop do elemento document.querySelectorAll(".randomPizzaContainer")
+  //Tb foi realizado mudança no algoritmo a fim de apenas realizar o que eh neceassario para alterar o size da pizza
   function changePizzaSizes(size) {
     var randomPizza = document.querySelectorAll(".randomPizzaContainer");
     var newWidth = sizeSwitcher(size);
@@ -491,6 +493,7 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
+  //variavel scrollValue para evitar chamadar toda vez document.body.scrollTop
   var scrollValue = document.body.scrollTop;
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((scrollValue / 1250) + (i % 5));
