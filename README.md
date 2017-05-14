@@ -28,6 +28,8 @@
  * arquivo perfmatters.js minificado
 
 **2. pizza.html**:
- * Mover o style.css para o pizza.html
-
+ * Mover o **style.css** para o **pizza.html**
+ * Compressão e alteração no tamanho das imagens para cada screen e carregamento utilizando a tag **picture**
+ * Em **main.js** o metodo *updatePositions* tem um loop que chamava **document.body.scrollTop** em cada interação e isso foi removido
+ * Em **main.js** o metodo *changePizzaSizes* foi alterado removendo calculos desnecessários e chamadas que forçavam recalculate style
 
