@@ -1,4 +1,4 @@
-## Website Performance Optimization portfolio project
+## Website Performance Optimization
 
 ### Como subir o projeto utilizando python e ngrok
 
@@ -9,18 +9,22 @@
   $> python -m SimpleHTTPServer 8080
   ```
 
-1. Download e instale [ngrok](https://ngrok.com/) na raíz do projeto.
+2. Download e instale [ngrok](https://ngrok.com/) na raíz do projeto.
 
   ``` bash
   $> cd /path/to/your-project-folder
   $> ./ngrok http 8080
   ```
 
-1. A url gerada pelo ngrok é publica e pode ser usada para medir o desempenho do site.
+3. A url gerada pelo ngrok é publica e pode ser usada para medir o desempenho do site.
 
 
-####Part 2: Otimizações realizadas no projeto para atingir niveis aceitaveis de performance:
+#### Otimizações realizadas no projeto para atingir niveis aceitaveis de performance:
 
 1. index.html
+⋅⋅* Mover o style.css para o index.html
+⋅⋅* Carregar o print.css somente quando para impressão adicionando *media="print"*
+⋅⋅* *async* adicionado para carregar assincronamente os js perfmatters.js e analytics.js
+⋅⋅* arquivo perfmatters.js minificado
 
 
