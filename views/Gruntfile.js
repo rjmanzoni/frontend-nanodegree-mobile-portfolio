@@ -15,7 +15,7 @@ module.exports = function(grunt) {
           engine: 'im',
           sizes: [{
        
-            width: 640,
+            width: 360,
             suffix: 'medium',
             quality: 60
             
